@@ -38,7 +38,50 @@ PUTはデータが存在する場合はデータが存在しない場合は新�
 **今、指定したファイルなんだけどさ。サクっと消しちゃってよ！なお願い**  
 サーバー上のファイルなどの削除を行う操作。サーバがクライアントにデータやサービスを提供する一般的なWebサイトで使われることは稀。  
 
-[GET/POST](https://wa3.i-3-i.info/word110431.html)・[PUT](https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html)・[PATCH](https://omathin.com/http-method/)・[DELETE](https://e-words.jp/w/DELETE%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html)
+[GET/POST](https://wa3.i-3-i.info/word110431.html)・[PUT](https://e-words.jp/w/PUT%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html)・[PATCH](https://omathin.com/http-method/)・[DELETE](https://e-words.jp/w/DELETE%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89.html)  
+
+  ## HTTPステータスコードとは  
+・ホームページを見るときに使うソフト（Webブラウザ）からホームページのファイルが置いてあるコンピュータ（Webサーバ）に対して出される「このページをちょうだい」なお願いに対する**Webサーバさんからの返事を表した3桁の数字**  
+[HTTPステータスコードについて](https://wa3.i-3-i.info/word166.html)  
+
+* 200
+  * リクエストが正常に処理できた  
+* 201
+  * リクエストが成功してリソースの作成が完了
+* 400
+  * 一般的なクライアントエラー
+* 404
+  * Webページが見つからない
+* 500
+  * 何らかのサーバ内で起きたエラー
+
+## リクエストヘッダーとは・リクエストボディとは    
+### リクエストヘッダー  
+  ⇨ホームページを見るときに使うソフト（Webブラウザ）からホームページのファイルが置いてあるコンピュータ（Webサーバ）に伝えたい「お願いごとやお願い元に関するあれこれ」が書かれている場所  
+### リクエストボディ    
+  ⇨「補足のメモ書き情報」が書かれている場所
+
+1. HTTPリクエストライン（リクエストライン）[^1]  
+1. HTTPリクエストヘッダ（ヘッダ）[^2]  
+1. HTTPリクエストメッセージボディ（メッセージボディ）[^3]  
+
+[^1]:POST /search.html HTTP/1.1\r\n  
+[^2]:Host: wa3.i-3-i.info\r\n   
+Connection: keep-alive\r\n  
+Content-Length: 38\r\n  
+Cache-Control: max-age=0\r\n  
+Origin: http://wa3.i-3-i.info\r\n  
+Upgrade-Insecure-Requests: 1\r\n  
+User-Agent: うんちゃら\r\n  
+Content-Type: application/x-www-form-urlencoded\r\n  
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8\r\n  
+Referer: http://wa3.i-3-i.info/index.html\r\n  
+Accept-Encoding: gzip, deflate\r\n  
+Accept-Language: ja,en-US;q=0.8,en;q=0.6\r\n 
+[^3]:\r\n  
+q=test&submitSearch=%E6%A4%9C%E7%B4%A2  
+
+  
 
 
 

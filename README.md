@@ -109,8 +109,20 @@ Connection: keep-alive\r\n
   ・JavaScriptと相性が良いファイルの書き方ルールのひとつ  
 
     
-  ![image](https://github.com/yuu3415/specialhomework/assets/143332858/e2ac6c9e-555f-465f-bcdd-d40a080da3fc)
+  ![image](https://github.com/yuu3415/specialhomework/assets/143332858/e2ac6c9e-555f-465f-bcdd-d40a080da3fc)  
 
+  ```Swift
+  {
+  "color_list": [ "red", "green", "blue" ],
+  "num_list": [ 123, 456, 789 ],
+  "mix_list": [ "red", 456, null, true ],
+  "array_list": [ [ 12, 23 ], [ 34, 45 ], [ 56, 67 ] ],
+  "object_list": [
+    { "name": "Tanaka", "age": 26 },
+    { "name": "Suzuki", "age": 32 }
+  ]
+}
+```
   
   
   
